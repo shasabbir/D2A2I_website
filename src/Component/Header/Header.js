@@ -6,7 +6,7 @@ function Header() {
     <a href="index.html" className="logo d-flex align-items-center">
       {/* Uncomment the line below if you also wish to use an image logo */}
       {/* <img src="assets/img/logo.png" alt=""> */}
-      <h1>Logis</h1>
+      <h1>DA2I2</h1>
     </a>
     <i className="mobile-nav-toggle mobile-nav-show bi bi-list" />
     <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" />
