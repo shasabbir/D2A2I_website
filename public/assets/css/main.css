@@ -1246,7 +1246,7 @@ section {
   padding: 0;
   margin: 0;
   font-family: var(--font-primary);
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--color-secondary);
 }
@@ -1750,35 +1750,56 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  min-height: 50vh;
-  background-color: var(--color-secondary);
-  background-image: url("../img/hero-bg.png");
-  background-size: cover;
-  background-position: center;
   position: relative;
-  padding: 120px 0 60px 0;
-  color: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+  background-color: var(--primary-color);
+  overflow: hidden;
 }
 
 .hero h2 {
-  margin-bottom: 20px;
-  padding: 0;
-  font-size: 48px;
+  margin-top: 110px;
+  margin-bottom: 15px;
+  padding: 50;
+  font-size: 53px;
   font-weight: 700;
   color: #fff;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 700px) {
   .hero h2 {
     font-size: 30px;
   }
 }
 
+.hero__video {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 1920px;
+  height: 1080px;
+  transform: translateX(-50%) translateY(-50%);
+  filter: brightness(50%);
+}
+
+.hero__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  z-index: 1;
+}
+
 .hero p {
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 300px;
   margin-bottom: 40px;
+  max-width: 700px;
 }
 
 .hero form {
